@@ -6,7 +6,7 @@
       <div class="weather-now-upper">
         <div class="find-places pb-1" style="max-width: 100%;">
           <div>
-            <img src="../assets/find.png" alt="" class="icon">
+            <img src="assets/find.png" alt="" class="icon">
           </div>
           <form #form = "ngForm" (submit) = "onSubmit()">
             <input type="text" placeholder="Search for places..." name="city" [(ngModel)]="cityName" style="width: 100%;">
@@ -29,7 +29,7 @@
           </span>
           <br>
           <span style="display: flex;">
-            <img src="../assets/boy.png" alt="" class="icon">
+            <img src="assets/boy.png" alt="" class="icon">
             <div style="padding-left: 4px;">Feels like - {{feelsLike}} °C</div>
           </span>
         </div>
@@ -77,10 +77,10 @@
                 <span class="metric"></span>
               </span>
               <div *ngIf="uv >= 6">
-                <img src="../assets/uv_high.png" alt="">
+                <img src="assets/uv_high.png" alt="">
               </div>
               <div *ngIf="uv < 6">
-                <img src="../assets/uv_low.png" alt="">
+                <img src="assets/uv_low.png" alt="">
               </div>
             </div>
           </div>
@@ -94,10 +94,10 @@
                 <span class="metric">km</span>
               </span>
               <div *ngIf="visibility <= 1">
-                <img src="../assets/vis_low.png" alt="">
+                <img src="assets/vis_low.png" alt="">
               </div>
               <div *ngIf="visibility > 1">
-                <img src="../assets/vis_clear.png" alt="">
+                <img src="assets/vis_clear.png" alt="">
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
                 <span class="metric">km/h</span>
               </span>
               <div>
-                <img src="../assets/wind.png" alt="">
+                <img src="assets/wind.png" alt="">
               </div>
             </div>
             <img src="" alt="">
@@ -126,7 +126,7 @@
                 <span class="metric">%</span>
               </span>
               <div>
-                <img src="../assets/humidity.png" alt="">
+                <img src="assets/humidity.png" alt="">
               </div>
             </div>
             <img src="" alt="">
