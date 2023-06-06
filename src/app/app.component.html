@@ -4,12 +4,12 @@
   <div class="weather-now">
     <div class="weather-now-inner p-1">
       <div class="weather-now-upper">
-        <div class="find-places pb-1">
+        <div class="find-places pb-1" style="max-width: 100%;">
           <div>
             <img src="../assets/find.png" alt="" class="icon">
           </div>
           <form #form = "ngForm" (submit) = "onSubmit()">
-            <input type="text" placeholder="Search for places..." name="city" [(ngModel)]="cityName">
+            <input type="text" placeholder="Search for places..." name="city" [(ngModel)]="cityName" style="width: 100%;">
           </form>
         </div>
         <div style="text-align: center;">

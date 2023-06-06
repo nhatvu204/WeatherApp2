@@ -41,14 +41,19 @@ body{
 /*  */
 
 .container{
-  width: 1200px;
+  max-width: 80vw;
   height: 90vh;
   background-color: #ececec;
   border-radius: 20px;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.05);
+  overflow: scroll;
 
   display: flex;
   flex-direction: row;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 .weather-now{
@@ -123,9 +128,13 @@ body{
 }
 
 .forecast-container{
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  column-gap: 16px;
 }
 
 
