@@ -41,7 +41,7 @@ body{
 /*  */
 
 .container{
-  max-width: 80vw;
+  width: 90vw;
   height: 90vh;
   background-color: #ececec;
   border-radius: 20px;
