@@ -46,7 +46,7 @@ export class AppComponent implements OnInit{
   }
 
   private getWeatherData(cityName: string){
-    this.http.get<WeatherData>(`http://api.weatherapi.com/v1/forecast.json?key=7f163eb0b09c41269e714907230506&q=${this.cityName}&days=8&aqi=no&alerts=no`)
+    this.http.get<WeatherData>(`https://api.weatherapi.com/v1/forecast.json?key=7f163eb0b09c41269e714907230506&q=${this.cityName}&days=8&aqi=no&alerts=no`)
     .subscribe((res) => {
       this.weatherData = res;
       this.temp_now = this.weatherData.current.temp_c;
